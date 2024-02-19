@@ -259,7 +259,7 @@ export class AlpacaStocksClient extends Websocket {
     };
   }
 
-  onStockTrade(fn: (tarde: AlpacaTrade) => void): void {
+  onStockTrade(fn: (trade: AlpacaTrade) => void): void {
     this.on(EVENT.TRADES, (trade: AlpacaTrade) => fn(trade));
   }
 
